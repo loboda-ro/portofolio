@@ -1,5 +1,6 @@
 import './App.css'
 import { NavBar } from './components/Nav/NavBar';
+import { Home } from './components/Home/Home';
 
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
       <header className="ml-12 mr-12 mt-8">
         <NavBar/>
       </header>
-      <main className="">
-
+      <main className="ml-12 mr-12">
+        <Home/>
       </main>
       <footer className="">
 

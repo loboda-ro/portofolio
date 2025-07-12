@@ -29,15 +29,15 @@ export const NavBar = () => {
                 </div>
             </div>
             <div className="flex space-x-6">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:underline">
+                <a href="https://www.linkedin.com/in/roman-loboda/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:underline">
                     <span>LinkedIn</span>
                     <span className="text-sm">↗</span>
                 </a>
-                <a href="#" target="_blank"  rel="noopener noreferrer" className="flex items-center space-x-1 hover:underline" >
+                <a href="https://drive.google.com/file/d/1B3y0wwLaR7vvnfFLawIebIpSxYScsIo9/view?usp=sharing" target="_blank"  rel="noopener noreferrer" className="flex items-center space-x-1 hover:underline" >
                     <span>Resume</span>
                     <span className="text-sm">↗</span>
                 </a>
             </div>
         </div>
-        );
+    );
 };
