@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    background: linear-gradient(90deg, #000000 0%, #1a1a1a 20%, #242424 50%, #1a1a1a 80%, #000000 100%);
+  }
+}
