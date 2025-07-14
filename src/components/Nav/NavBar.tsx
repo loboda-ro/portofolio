@@ -13,13 +13,13 @@ export const NavBar = () => {
     };
 
     return (
-        <div className="flex justify-between items-center text-neutral-100/100 font-sans">
+        <div className="flex justify-between items-center text-neutral-100/100 font-sans px-8 py-12">
             <div>
                 <div className="text-base font-semibold">Roman Loboda</div>
                 <div className="text-xs text-gray-400">Full-Stack Developer</div>
             </div>
             <div>
-                <div className="relative flex items-center justify-center bg-gray-300/10 rounded-full px-2 py-1 text-base hover:bg-gray-400/20 h-[45px] transition-all duration-500 ease-in-out">
+                <div className="relative flex items-center justify-center bg-gray-300/10 rounded-full px-2 py-1 text-base hover:bg-gray-400/20 h-[45px] transition-all duration-500 ease-in-out drop-shadow-[0_0_20px_rgba(0,0,0,2.0)]">
                     <div className={`absolute top-[-2px] left-8 h-[2px] w-6 bg-white rounded-tl rounded-tr shadow-[0_0_10px_4px_rgba(255,255,255,0.4)] transition-transform duration-500 ease-in-out ${activeTab === "info" ? "translate-x-20" : "translate-x-0"}`}></div>
                         <div className="flex space-x-4">
                             <a href="#" onClick={() => handleActive("work")} className={`relative px-4 py-1 rounded-full transition-colors duration-500 ease-in-out ${activeTab === "work" ? "bg-gray-400/20" : "hover:bg-gray-400/10"}`}>Work</a>
