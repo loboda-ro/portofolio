@@ -4,7 +4,6 @@ export const HeroComponent = () => {
   return (
     <div className="flex items-center justify-center overflow-hidden py-15 px-12">
 
-      
       <div className="relative rounded-2xl border border-white/20 backdrop-blur-sm shadow-2xl max-h-145 max-w-5xl w-full p-2 bg-opacity-0 overflow-hidden" 
           style={{
           WebkitMaskImage: 'linear-gradient(to bottom, white 50%, transparent 100%)',
