@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: Serif2;
+  src: url(../src/assets/fonts/RoseGarden\ Deluxe\ Serif\ 2.otf);
+}
+
 @import "tailwindcss";
 
 
@@ -8,4 +14,8 @@
     sans-serif;
     background: linear-gradient(90deg, #000000 0%, #1a1a1a 20%, #242424 50%, #1a1a1a 80%, #000000 100%);
   }
+}
+
+@theme {
+  --font-display: Serif2
 }

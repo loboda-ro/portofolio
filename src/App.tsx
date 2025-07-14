@@ -1,16 +1,17 @@
 import './App.css'
 import { NavBar } from './components/Nav/NavBar';
-import { Home } from './components/Home/Home';
+import { Home } from './pages/Home/Home';
+
 
 
 function App() {
 
   return (
     <div>
-      <header className="ml-12 mr-12 mt-8">
+      <header className="bg-linear-[90deg,#000000_0%,#1a1a1a_20%,#242424_50%,#1a1a1a_80%,#000000_100%]">
         <NavBar/>
       </header>
-      <main className="ml-12 mr-12">
+      <main className="">
         <Home/>
       </main>
       <footer className="">
