@@ -1,21 +1,18 @@
 import './App.css'
+import { useState } from 'react';
 import { NavBar } from './components/Nav/NavBar';
 import { Home } from './pages/Home/Home';
 
-
-
 function App() {
+  const [activeTab, setActiveTab] = useState<'work' | 'info'>('work');
 
   return (
     <div>
-      <header className="bg-linear-[90deg,#000000_0%,#1a1a1a_20%,#242424_50%,#1a1a1a_80%,#000000_100%]">
-        <NavBar/>
-      </header>
+      <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
       <main className="">
-        <Home/>
+        <Home activeTab={activeTab} />
       </main>
       <footer className="">
-
       </footer>
     </div>
   );
