@@ -21,7 +21,7 @@ export const technologies: Technology[] = [
   },
   { 
     id: 'javascript', 
-    name: 'JavaScript/TypeScript', 
+    name: 'JavaScript', 
     category: 'frontend', 
     color: '#F7DF1E', 
     description: 'Programming Language',
@@ -37,7 +37,7 @@ export const technologies: Technology[] = [
   },
   { 
     id: 'nodejs', 
-    name: 'Node.js/Express', 
+    name: 'Node.js', 
     category: 'backend', 
     color: '#339933', 
     description: 'Runtime & Framework',
