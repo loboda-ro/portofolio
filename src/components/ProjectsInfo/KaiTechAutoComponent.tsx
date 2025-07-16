@@ -20,14 +20,14 @@ export const KaiTechAutoComponent = () => (
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex flex-col items-center pt-20 pb-32"
+      className="flex flex-col items-center pt-20 pb-16 sm:pb-32 px-2 sm:px-6"
     >
-      <h1 className="text-4xl md:text-5xl font-bold text-neutral-100 drop-shadow-lg mb-2">KaiTechAuto</h1>
-      <div className="text-lg text-blue-100 mb-4">Automatic breakdown of materials usage to justify repair cost to insurance companies</div>
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-100 drop-shadow-lg mb-2">KaiTechAuto</h1>
+      <div className="text-base sm:text-lg text-blue-100 mb-4">Automatic breakdown of materials usage to justify repair cost to insurance companies</div>
       <motion.img
         src={mainScreenshot}
         alt="KaiTechAuto Main Page"
-        className="rounded-2xl shadow-xl border border-white/10 max-w-xl w-full mx-auto my-6"
+        className="rounded-2xl shadow-xl border border-white/10 w-full max-w-xs sm:max-w-md md:max-w-xl mx-auto my-6"
         initial={{ opacity: 0, scale: 0.98 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
@@ -39,25 +39,25 @@ export const KaiTechAutoComponent = () => (
       initial={{ opacity: 0, x: -40 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.7 }}
-      className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6 py-12"
+      className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 px-2 py-6 sm:px-6 sm:py-12"
     >
       <div>
         <div className="mb-6">
-          <div className="uppercase text-xs text-blue-200 font-semibold mb-1">My Role</div>
-          <div className="text-neutral-100">Co-Founder, Full-Stack Engineer</div>
+          <div className="uppercase text-xs sm:text-sm text-blue-200 font-semibold mb-1">My Role</div>
+          <div className="text-neutral-100 text-base sm:text-lg">Co-Founder, Full-Stack Engineer</div>
         </div>
         <div className="mb-6">
-          <div className="uppercase text-xs text-blue-200 font-semibold mb-1">Team</div>
-          <div className="text-neutral-100">Roman Loboda, Oleh Krainyk</div>
+          <div className="uppercase text-xs sm:text-sm text-blue-200 font-semibold mb-1">Team</div>
+          <div className="text-neutral-100 text-base sm:text-lg">Roman Loboda, Oleh Krainyk</div>
         </div>
         <div>
-          <div className="uppercase text-xs text-blue-200 font-semibold mb-1">Timeline</div>
-          <div className="text-neutral-100">1 month</div>
+          <div className="uppercase text-xs sm:text-sm text-blue-200 font-semibold mb-1">Timeline</div>
+          <div className="text-neutral-100 text-base sm:text-lg">1 month</div>
         </div>
       </div>
       <div>
-        <div className="uppercase text-xs text-blue-200 font-semibold mb-1">Overview</div>
-        <div className="text-blue-100 leading-relaxed">
+        <div className="uppercase text-xs sm:text-sm text-blue-200 font-semibold mb-1">Overview</div>
+        <div className="text-blue-100 leading-relaxed text-base sm:text-lg">
           KaiTechAuto is a tool for auto collision shops to automatically break down and justify materials usage for insurance claims. It streamlines the process of documenting and submitting repair costs, using modern web technologies and automation to save time and increase approval rates.
         </div>
       </div>
@@ -68,12 +68,12 @@ export const KaiTechAutoComponent = () => (
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
-      className="max-w-5xl mx-auto px-6 py-12"
+      className="max-w-5xl mx-auto px-2 py-6 sm:px-6 sm:py-12"
     >
       <div className="flex items-center mb-6">
-        <span className="uppercase text-xs text-blue-200 font-semibold">Highlights</span>
+        <span className="uppercase text-xs sm:text-sm text-blue-200 font-semibold">Highlights</span>
       </div>
-      <div className="text-neutral-100 text-lg mb-8">
+      <div className="text-neutral-100 text-base sm:text-lg mb-8">
         Modernizing insurance claim documentation for auto repair shops with automation and a user-friendly interface.
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -82,16 +82,16 @@ export const KaiTechAutoComponent = () => (
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
         >
-          <img src={mainScreenshot} alt="Main Page" className="rounded-xl shadow-lg border border-white/10 max-w-lg w-full mx-auto my-6" />
-          <div className="text-blue-100 text-sm mt-2 text-center">Estimates Page</div>
+          <img src={mainScreenshot} alt="Main Page" className="rounded-xl shadow-lg border border-white/10 w-full max-w-xs sm:max-w-md md:max-w-lg mx-auto my-6" />
+          <div className="text-blue-100 text-xs sm:text-sm mt-2 text-center">Estimates Page</div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <img src={profileScreenshot} alt="Profile Page" className="rounded-xl shadow-lg border border-white/10 max-w-lg w-full mx-auto my-6" />
-          <div className="text-blue-100 text-sm mt-2 text-center">Inventory Page</div>
+          <img src={profileScreenshot} alt="Profile Page" className="rounded-xl shadow-lg border border-white/10 w-full max-w-xs sm:max-w-md md:max-w-lg mx-auto my-6" />
+          <div className="text-blue-100 text-xs sm:text-sm mt-2 text-center">Inventory Page</div>
         </motion.div>
       </div>
     </motion.section>
@@ -101,11 +101,11 @@ export const KaiTechAutoComponent = () => (
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
-      className="max-w-3xl mx-auto px-6 py-12"
+      className="max-w-3xl mx-auto px-2 py-6 sm:px-6 sm:py-12"
     >
-      <div className="text-neutral-100 text-xl font-semibold mb-4">Demo Video</div>
+      <div className="text-neutral-100 text-lg sm:text-xl font-semibold mb-4">Demo Video</div>
       <div className="flex justify-center">
-        <div className="rounded-xl shadow-xl border border-white/10 max-w-xl w-full mx-auto my-6 bg-black overflow-hidden">
+        <div className="rounded-xl shadow-xl border border-white/10 w-full max-w-xs sm:max-w-md md:max-w-xl mx-auto my-6 bg-black overflow-hidden">
           <div className="relative pb-[56.25%] h-0">
             <iframe
               src="https://www.youtube.com/embed/IXL2p1WCu2A"
@@ -118,7 +118,7 @@ export const KaiTechAutoComponent = () => (
           </div>
         </div>
       </div>
-      <div className="text-blue-100 text-sm text-center">KaiTechAuto Demo</div>
+      <div className="text-blue-100 text-xs sm:text-sm text-center">KaiTechAuto Demo</div>
     </motion.section>
 
     {/* Tech Stack */}
@@ -126,10 +126,10 @@ export const KaiTechAutoComponent = () => (
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
-      className="max-w-4xl mx-auto px-6 py-12"
+      className="max-w-4xl mx-auto px-2 py-6 sm:px-6 sm:py-12"
     >
-      <div className="text-neutral-100 text-xl font-semibold mb-4">Tech Stack</div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
+      <div className="text-neutral-100 text-lg sm:text-xl font-semibold mb-4">Tech Stack</div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3 sm:gap-4">
         {filteredTech.map((tech) => (
           <div
             key={tech.id}
@@ -138,7 +138,7 @@ export const KaiTechAutoComponent = () => (
             {tech.logo && (
               <img src={tech.logo} alt={tech.name} className="w-10 h-10 object-contain mb-2" />
             )}
-            <span className="text-neutral-100 text-sm font-medium text-center">{tech.name}</span>
+            <span className="text-neutral-100 text-xs sm:text-sm font-medium text-center">{tech.name}</span>
           </div>
         ))}
       </div>
