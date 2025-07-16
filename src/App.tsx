@@ -1,19 +1,27 @@
 import './App.css'
-import { useState } from 'react';
 import { NavBar } from './components/Nav/NavBar';
 import { Home } from './pages/Home/Home';
+import { InfoComponent } from './components/Home/InfoComponent';
+import { Routes, Route, Navigate } from "react-router-dom";
+import { StayWithMe } from './pages/ProjectsInfo/StayWithMe/StayWithMe';
+import { KaiTechAuto } from './pages/ProjectsInfo/KaiTechAuto/KaiTechAuto';
 
 function App() {
-  const [activeTab, setActiveTab] = useState<'work' | 'info'>('work');
-
   return (
     <div>
-      <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <main className="">
-        <Home activeTab={activeTab} />
-      </main>
-      <footer className="">
-      </footer>
+      <NavBar />
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/info" element={<InfoComponent />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/projects-info/staywithme" element={<StayWithMe />} />
+          <Route path="/projects-info/kaitechauto" element={<KaiTechAuto />} />
+        </Routes>
+      </div>
+    <footer className="text-center text-blue-200 text-xs py-8 opacity-60">
+      &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+    </footer>
     </div>
   );
 }

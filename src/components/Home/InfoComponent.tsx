@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 export const InfoComponent = () => {
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-start pb-24 pt-32 px-4">
+    <div className="relative w-full min-h-screen flex flex-col items-center justify-center pb-24 pt-32 px-4">
       {/* Hero Section */}
       <div className="max-w-3xl w-full mx-auto mb-16">
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-left text-left">
           <div className="flex items-center gap-2 mb-4">
-            <span className="w-2 h-2 bg-white rounded-full shadow-md"></span>
+            <span className="w-2 h-2 bg-white rounded-full shadow-[0_0_10px_4px_rgba(255,255,255,0.3)]"></span>
             <span className="uppercase text-xs tracking-widest text-gray-400 font-semibold">About Me</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-neutral-100 mb-4 drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">
@@ -43,11 +43,18 @@ export const InfoComponent = () => {
           </div>
         </motion.div>
       </div>
+      {/*  Decoration line */}
+      <motion.div 
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 6 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="w-24 h-0.5 bg-gradient-to-r from-transparent via-white/60 to-transparent mx-auto mt-1"
+      />
 
       {/* Experience Section */}
-      <div className="max-w-5xl w-full mx-auto mb-20">
+      <div className="max-w-5xl w-full mx-auto mb-20 px-8 pt-16">
         <div className="flex items-center gap-2 mb-8">
-          <span className="w-2 h-2 bg-white rounded-full shadow-md"></span>
+          <span className="w-2 h-2 bg-white rounded-full shadow-[0_0_10px_4px_rgba(255,255,255,0.3)]"></span>
           <span className="uppercase text-xs tracking-widest text-gray-400 font-semibold">Experience</span>
         </div>
         <div className="flex flex-col gap-12">
@@ -55,12 +62,10 @@ export const InfoComponent = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="text-2xl font-semibold text-neutral-100">KaiTech</div>
             <div>
-              <div className="font-semibold text-neutral-100">Full-Stack Engineer</div>
+              <div className="font-semibold text-neutral-100">Co-Founder & Full-Stack Engineer</div>
               <div className="text-gray-400 text-sm mb-2">Dec 2024 – Jul 2025 · Miami, FL</div>
               <div className="text-gray-300 text-base">
-                Built and deployed a React + Node.js platform on Azure, automating paint/material estimate generation and insurer supplement negotiation. Reduced manual data entry by 70%, recovered $150 per repair on 12 pilot jobs.<br />
-                Interviewed 200+ collision-shop owners/estimators, converted insights into product specs that shaped the SaaS roadmap.<br />
-                Integrated PostHog and Google OAuth/JWT to track feature adoption and onboarded the first paying customer in under 30 days.
+                Visited 200+ collision shops, built a React/Node.js tool for supplements and materials estimates, got paying customers. Shut down after seeing limited market demand.<br />
               </div>
             </div>
           </div>
@@ -70,9 +75,7 @@ export const InfoComponent = () => {
               <div className="font-semibold text-neutral-100">AI Solutions Developer</div>
               <div className="text-gray-400 text-sm mb-2">Jan 2024 – Dec 2024 · Miami, FL</div>
               <div className="text-gray-300 text-base">
-                Designed and deployed an AI leasing agent using Python, Milvus, Azure, Docker, handling 1,200+ monthly customer inquiries. Improved average response time from 2 hours to under 5 minutes.<br />
-                Built backend data pipeline processing 500K+ rows of customer communication data for semantic search, achieving 92% retrieval accuracy.<br />
-                Deployed Milvus vector DB using Docker on Azure Linux VMs to support 10K+ semantic queries per day.
+                AI leasing agent (Python, Milvus, Azure, Docker) with vector database memory, automating customer communication.<br />
               </div>
             </div>
           </div>
@@ -82,22 +85,35 @@ export const InfoComponent = () => {
               <div className="font-semibold text-neutral-100">Data Tools Developer</div>
               <div className="text-gray-400 text-sm mb-2">Nov 2022 – May 2023 · Miami, FL</div>
               <div className="text-gray-300 text-base">
-                Developed internal tracking tools (Excel macros, Python scripting) monitoring 15+ campaign KPIs across 3 regions, boosting campaign performance by 24%.<br />
-                Designed and implemented a CRM system using Python and web scraping to aggregate 1,500+ customer records from Google Maps, reducing manual entry by 60%.<br />
-                Built interactive dashboards with Tableau, analyzing 200K+ rows of customer feedback data, driving a 10% increase in customer traffic and $120K in additional revenue.
+                Built Python automation scripts and to clean and process large datasets for marketing analytics.<br />
               </div>
             </div>
           </div>
         </div>
       </div>
-
+      {/*  Decoration line */}
+      <motion.div 
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 6 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="w-24 h-0.5 bg-gradient-to-r from-transparent via-white/60 to-transparent mx-auto mt-1"
+      />
       {/* Education Section */}
-      <div className="max-w-5xl w-full mx-auto mb-20">
+      <div className="max-w-5xl w-full mx-auto mb-20 px-8 pt-16">
         <div className="flex items-center gap-2 mb-8">
-          <span className="w-2 h-2 bg-white rounded-full shadow-md"></span>
+          <span className="w-2 h-2 bg-white rounded-full shadow-[0_0_10px_4px_rgba(255,255,255,0.3)]"></span>
           <span className="uppercase text-xs tracking-widest text-gray-400 font-semibold">Education</span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="text-2xl font-semibold text-neutral-100">Telora</div>
+          <div>
+            <div className="font-semibold text-neutral-100">Fellowship for ambitious hackers</div>
+            <div className="text-gray-400 text-sm mb-2">Jan 2025 · Miami, FL</div>
+            <div className="text-gray-300 text-base">One of 6 funded teams selected from 900+ applicants.</div>
+          </div>
+
+        </div>
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-10">
           <div className="text-2xl font-semibold text-neutral-100">Florida International University</div>
           <div>
             <div className="font-semibold text-neutral-100">BBA in Business Analytics</div>
