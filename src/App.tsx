@@ -2,13 +2,25 @@ import './App.css'
 import { NavBar } from './components/Nav/NavBar';
 import { Home } from './pages/Home/Home';
 import { InfoComponent } from './components/Home/InfoComponent';
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { StayWithMe } from './pages/ProjectsInfo/StayWithMe/StayWithMe';
 import { KaiTechAuto } from './pages/ProjectsInfo/KaiTechAuto/KaiTechAuto';
+import { useEffect } from 'react';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <NavBar />
       <div>
         <Routes>
