@@ -32,7 +32,7 @@ function App() {
         </Routes>
       </div>
     <footer className="text-center text-blue-200 text-xs py-8 opacity-60">
-      &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+      &copy; {new Date().getFullYear()} Roman Loboda. All rights reserved.
     </footer>
     </div>
   );
