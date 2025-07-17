@@ -6,8 +6,8 @@ export const Home = () => {
     return (
         <div>
             <HeroComponent/>
-            <TechnologiesComponent/>
             <ProjectComponent/>
+            <TechnologiesComponent/>
         </div>
         
     )

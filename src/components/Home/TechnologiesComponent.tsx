@@ -7,8 +7,8 @@ export const TechnologiesComponent = () => {
     return acc;
   }, {} as Record<string, typeof technologies>);
 
-  return (
-    <div className="flex items-center justify-center overflow-hidden py-15 px-12">
+    return (
+    <div className="flex items-center justify-center overflow-hidden py-6 pb-8 px-4 mb:py-8 lg:py-8 sm:px-12 scroll-reveal">
       <motion.div 
         className="relative rounded-2xl border border-white/20 backdrop-blur-sm shadow-2xl max-w-5xl w-full p-2 bg-opacity-0 overflow-hidden"
       >
@@ -57,9 +57,9 @@ export const TechnologiesComponent = () => {
                   delay: categoryIndex * 0.1,
                   ease: "easeInOut" 
                 }}
-                className="group"
+                className="group scroll-reveal"
               >
-                <div className={`relative rounded-xl border border-white/20 backdrop-blur-sm p-8 bg-gradient-to-br ${categoryColors[category as keyof typeof categoryColors]} hover:bg-opacity-40 transition-all duration-300 ease-in-out group-hover:shadow-2xl group-hover:shadow-white/10`}>
+                <div className={`relative rounded-xl border border-white/20 backdrop-blur-sm p-8 bg-gradient-to-br ${categoryColors[category as keyof typeof categoryColors]} hover:bg-opacity-40 transition-all duration-300 ease-in-out group-hover:shadow-2xl group-hover:shadow-white/10 md:hover:bg-opacity-40`}>
                   
                   {/* Category Header */}
                   <div className="mb-6">
@@ -119,11 +119,11 @@ export const TechnologiesComponent = () => {
                     ))}
                   </div>
 
-                  {/* Hover Effect Overlay */}
-                  <div className="absolute inset-0 rounded-xl border border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-gradient-to-br from-white/5 to-transparent"></div>
+                  {/* Hover Effect Overlay - Only on Desktop */}
+                  <div className="absolute inset-0 rounded-xl border border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-gradient-to-br from-white/5 to-transparent md:block hidden"></div>
                   
-                  {/* Glow Effect */}
-                  <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                  {/* Glow Effect - Only on Desktop */}
+                  <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none hidden md:block"
                        style={{
                          background: `radial-gradient(circle at center, ${techs[0]?.color}20 0%, transparent 60%)`
                        }}>
