@@ -66,6 +66,9 @@ export const NavBar = () => {
             <span>Resume</span>
             <span className="text-sm">↗</span>
           </a>
+          <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:underline text-xs sm:text-base">
+            <span>Login</span>
+          </a>
         </div>
       </div>
 
