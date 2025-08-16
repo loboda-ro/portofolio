@@ -9,6 +9,7 @@ export const NavBar = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const isProjectPage = location.pathname.startsWith("/projects-info/");
+  const isLoginPage = location.pathname === "/login";
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -24,7 +25,7 @@ export const NavBar = () => {
     };
   }, []);
 
-  if (isProjectPage) {
+  if (isProjectPage || isLoginPage) {
     return (
       <div className="fixed top-0 left-0 z-50 flex items-center px-4 py-4 sm:px-6 sm:py-6 md:px-8 md:py-10">
         <button
@@ -66,9 +67,9 @@ export const NavBar = () => {
             <span>Resume</span>
             <span className="text-sm">↗</span>
           </a>
-          <a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1 hover:underline text-xs sm:text-base">
+          <NavLink to="/login" className="flex items-center space-x-1 hover:underline text-xs sm:text-base">
             <span>Login</span>
-          </a>
+          </NavLink>
         </div>
       </div>
 

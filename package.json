@@ -1,6 +1,21 @@
 {
+  "name": "romanloboda-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website with client and server",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.2.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
